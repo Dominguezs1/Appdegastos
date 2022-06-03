@@ -1,0 +1,57 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    color:aliceblue;
+    text-align: center;
+    min-height: 70px;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.parteuno {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduccion {
+    border-radius: .5em;
+    text-align: center;
+}
+
+.form-control {
+    border-radius: .5em;
+    text-align: center;
+}
+
+#main-container{
+    margin:10px auto;
+    width:600px;
+}
+
+
+.footer {
+    display: flex;
+    text-align: left;
+    justify-content:end;
+    align-items: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container > div {
+    width:100;
+    margin: 10 px;
+    display: flex
+}
