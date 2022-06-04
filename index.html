@@ -9,32 +9,39 @@
     <title>División de cuenta</title>
 </head>
 <body>
-    <script src="java.js"></script>
+    <script src="javascript.js"></script>
     <header>
         <div class="row">
             <div class="1">
                 <h1>App de gastos</h1>
             </div>
             <div class="2">
-                <h5>Ingrese cuanto gastó cada uno:</h5>
+                <h5>Ingrese cuánto gastó cada uno:</h5>
             </div>
         </div>
     </header>
     <br>
 
-    <div class="flex-container">
-        <input type="text" id ="nombre" class="form-control" placeholder="Nombre">
-        <br>
-        <input type="number" id="monto" class="form-control" placeholder="Valor ($)">
-        <br><br>
-        <button id="btn-add" onclick="AgregarNuevo(nombre.value, monto.value)" class="btn btn-danger">enviar</button>
-    </div>
+    <main class="container d-flex align-items-center justify-content-center">
+        <div class="flex-container">
+            <input type="text" id ="nombre" class="form-control" placeholder="Nombre">
+            <br>
+            <input type="number" id="monto" class="form-control" placeholder="Valor ($)">
+            <br>
+            <button id="btn-add" onclick="AgregarNuevo(nombre.value, monto.value)" class="btn btn-danger">enviar</button>
+            <br>
+        </div>
+    </main>
     <div class="flex-container" id="datos">
     </div>
-    <div class="flex-container" id="total"> <br>
+    <div class="flex-container" id="total">
     <button class="btn btn-danger" onclick="BorrarUno()">borrar</button>
     </div>
-    
+    <br>
+    <footer class="text-center footer-style" id="final">
+        <hp class="copyright-text">Copyright &copy; 2012 All Rights Reserved by <a href="#">SD</a></p>
+    </footer>
+
     
 </body>
 </html>

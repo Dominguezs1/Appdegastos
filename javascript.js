@@ -11,10 +11,11 @@ function Calcular (){
     apagar = parseFloat(total/montos.length).toFixed(2);
     var totalM = document.getElementById("total");
     totalM.innerHTML = `
-    <div class="flex-item">
-    <h6> Total: $${total} </h6>
-    <h6> Cada uno debe aportar: $${apagar} </h6>
+    <div class="flex-item" id="parte2">
+    <h5>Total: $${total} </h5>
+    <h5><u>Cada uno debe aportar: $${apagar} </u></h5>
     </div>
+    <br>
     `;
 
 }
@@ -40,9 +41,8 @@ function Imprimir(){
     nuevo.innerHTML = "";
     for( let i=0; i < montos.length; i++){
         nuevo.innerHTML += `
-        <br>
-        <div class="flex-item">
-        <p>${nombres[i]} gasto: ${montos [i]}</p>
+        <div class="flex-item" id="parte1">    
+        <p>${nombres[i]} gastó: $${montos [i]}</p>
         </div>
     `;
     }

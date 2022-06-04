@@ -14,44 +14,42 @@ header {
     padding: 10px;
 }
 
-.parteuno {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.introduccion {
-    border-radius: .5em;
-    text-align: center;
-}
-
-.form-control {
-    border-radius: .5em;
-    text-align: center;
-}
-
-#main-container{
-    margin:10px auto;
-    width:600px;
-}
-
-
-.footer {
-    display: flex;
-    text-align: left;
-    justify-content:end;
-    align-items: center;
-}
-
-.flex-container {
+.flex-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;   
 }
 
-.flex-container > div {
-    width:100;
-    margin: 10 px;
-    display: flex
+#parte2{
+    border: solid 4px blue;
+    border-radius: 10px;
+    margin: 2em;
+    width:90%;
+    
+}
+
+#parte1{
+    border: solid 1px gray;
+    border-radius: 2px;
+    width: 90%;
+}
+
+#nombre, #monto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#final{
+    background-color: blue;
+    color:aliceblue;
+    text-align: center;
+    position:fixed;
+    justify-content: end;
+    bottom: 0;
+    width: 100%;
 }
